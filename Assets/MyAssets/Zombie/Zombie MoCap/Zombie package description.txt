@@ -1,0 +1,49 @@
+Zombie Package
+
+This package features a collection of fbx animations for an undead bipedal humanoid character performing various actions
+
+Zombie Attack 1: Left handed swipe
+
+Zombie Attack 2: Arm flail
+
+Zombie Attack 3: Heavy two-handed attack
+
+Zombie Attack 4: Forward moving heavy two-handed attack
+
+Zombie Attack 5: Heavy steap and flail
+
+Zombie Attack 6: Two-handed step and Swipe
+
+Zombie Attack 7: Forehand and backhand swipes
+
+Zombie Combo Attack: A 3 hit swiping combo
+
+Zombie Combo Attack Victim: Character struck by the aforementioned Zombie Combo Attack
+
+Zombie Death: Transition from undead to dead
+
+Zombie Idle: Stationary idle animation for Zombie
+
+Zombie Idle 2: Stumbling idle animation for Zombie
+
+Zombie Shuffle: Zombie stumbling forward
+
+Zombie Walk 1: Zombie walks forward
+
+Zombie Walk 2: Alternate Zombie walks forward
+
+Zombie Turn Around: A 180 right turn
+
+Zombie Taking Hits 1: Stumbling backwards after being struck
+
+Zombie Taking Hits 2: Reacting to a strike from the left
+
+Zombie Taking Hits 3: Reacting to a strike from the right
+
+Zombie Taking Hits 4: Alternate reacting to strike from the right
+
+Zombie Taking Hits 5: Alternate reacting to strike from the left
+
+Zombie Taking Hits 6: Alternate stumbling backwards after being struck
+
+If you have any questions feel free to contact us at morromotion.forumotion.com
