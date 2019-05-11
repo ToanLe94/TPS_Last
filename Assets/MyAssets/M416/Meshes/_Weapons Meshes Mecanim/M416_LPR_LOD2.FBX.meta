@@ -1,0 +1,125 @@
+fileFormatVersion: 2
+guid: df6b0ed506ebd4fb3b87207b5d0c33af
+timeCreated: 1498076537
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ACC1_M416_joint
+    100002: ACC2_M416_joint
+    100004: Bolt
+    100006: bolt_M416_joint
+    100008: Charging_Handle
+    100010: charginghandle_M416_joint
+    100012: M416
+    100014: //RootNode
+    100016: Magazine
+    100018: magazine_M416_joint
+    100020: root_M416_joint
+    100022: Selector
+    100024: selector_M416_joint
+    100026: Stock
+    100028: stock_M416_joint
+    100030: Trigger
+    100032: trigger_M416_joint
+    400000: ACC1_M416_joint
+    400002: ACC2_M416_joint
+    400004: Bolt
+    400006: bolt_M416_joint
+    400008: Charging_Handle
+    400010: charginghandle_M416_joint
+    400012: M416
+    400014: //RootNode
+    400016: Magazine
+    400018: magazine_M416_joint
+    400020: root_M416_joint
+    400022: Selector
+    400024: selector_M416_joint
+    400026: Stock
+    400028: stock_M416_joint
+    400030: Trigger
+    400032: trigger_M416_joint
+    4300000: M416
+    4300002: Stock
+    4300004: Charging_Handle
+    4300006: Selector
+    4300008: Trigger
+    4300010: Bolt
+    4300012: Magazine
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Bolt
+    13700002: Charging_Handle
+    13700004: M416
+    13700006: Magazine
+    13700008: Selector
+    13700010: Stock
+    13700012: Trigger
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

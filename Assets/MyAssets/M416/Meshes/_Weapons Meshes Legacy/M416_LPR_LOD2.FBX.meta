@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: c125453907d06460db7fae9df00463dc
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ACC1_M416_joint
+    100002: ACC2_M416_joint
+    100004: Bolt_LOD2
+    100006: bolt_M416_joint
+    100008: Charging_Handle_LOD2
+    100010: charginghandle_M416_joint
+    100012: M416_LOD2
+    100014: //RootNode
+    100016: Magazine_LOD2
+    100018: magazine_M416_joint
+    100020: root_M416_joint
+    100022: Selector_LOD2
+    100024: selector_M416_joint
+    100026: Stock_LOD2
+    100028: stock_M416_joint
+    100030: Trigger_LOD2
+    100032: trigger_M416_joint
+    400000: ACC1_M416_joint
+    400002: ACC2_M416_joint
+    400004: Bolt_LOD2
+    400006: bolt_M416_joint
+    400008: Charging_Handle_LOD2
+    400010: charginghandle_M416_joint
+    400012: M416_LOD2
+    400014: //RootNode
+    400016: Magazine_LOD2
+    400018: magazine_M416_joint
+    400020: root_M416_joint
+    400022: Selector_LOD2
+    400024: selector_M416_joint
+    400026: Stock_LOD2
+    400028: stock_M416_joint
+    400030: Trigger_LOD2
+    400032: trigger_M416_joint
+    4300000: M416_LOD2
+    4300002: Stock_LOD2
+    4300004: Charging_Handle_LOD2
+    4300006: Selector_LOD2
+    4300008: Trigger_LOD2
+    4300010: Bolt_LOD2
+    4300012: Magazine_LOD2
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Bolt_LOD2
+    13700002: Charging_Handle_LOD2
+    13700004: M416_LOD2
+    13700006: Magazine_LOD2
+    13700008: Selector_LOD2
+    13700010: Stock_LOD2
+    13700012: Trigger_LOD2
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M416_TEX1
+    second: {fileID: 2100000, guid: a53b82c8e272b4c87af2f9dc612c5673, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

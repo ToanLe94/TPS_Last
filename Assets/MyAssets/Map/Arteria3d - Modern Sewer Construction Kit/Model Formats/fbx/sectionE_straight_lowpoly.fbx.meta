@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: f12332b5ea4b3954ba31bac7a71fa652
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: section_straight_Arch
+    100002: section_straight_CeilingSupports
+    100004: section_straight_Form15
+    100006: section_straight_light
+    100008: section_straight_Pipes
+    100010: section_straight_SectionE_straight
+    100012: //RootNode
+    100014: Untitled
+    400000: section_straight_Arch
+    400002: section_straight_CeilingSupports
+    400004: section_straight_Form15
+    400006: section_straight_light
+    400008: section_straight_Pipes
+    400010: section_straight_SectionE_straight
+    400012: //RootNode
+    400014: Untitled
+    2100000: sewer1
+    2100002: sewer2
+    2100004: sewer30
+    2100006: Unassigned
+    2100008: sewer3
+    2100010: light
+    2100012: sewer1_c1
+    2300000: section_straight_Arch
+    2300002: section_straight_CeilingSupports
+    2300004: section_straight_Form15
+    2300006: section_straight_light
+    2300008: section_straight_Pipes
+    2300010: section_straight_SectionE_straight
+    2300012: Untitled
+    3300000: section_straight_Arch
+    3300002: section_straight_CeilingSupports
+    3300004: section_straight_Form15
+    3300006: section_straight_light
+    3300008: section_straight_Pipes
+    3300010: section_straight_SectionE_straight
+    3300012: Untitled
+    4300000: section_straight_Arch
+    4300002: section_straight_CeilingSupports
+    4300004: section_straight_Form15
+    4300006: section_straight_light
+    4300008: section_straight_Pipes
+    4300010: section_straight_SectionE_straight
+    4300012: Untitled
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
