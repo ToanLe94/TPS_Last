@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2175565011004455805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2175565011004455804}
+  - component: {fileID: 9165701063425078030}
+  - component: {fileID: 2175565011004455803}
+  m_Layer: 9
+  m_Name: Weaponts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2175565011004455804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2175565011004455805}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9165701063425078030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2175565011004455805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2183af0f36de8c40bbbc3b9b74cb36e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grimAnimator: {fileID: 0}
+  pistol: {fileID: 0}
+  pistolSlot: {fileID: 0}
+  pistolHolding: {fileID: 0}
+  pistolSpawnMuzzle: {fileID: 0}
+  pistolShellPoint: {fileID: 0}
+  pistolMuzzleFlash1: {fileID: 0}
+  pistolMuzzleFlash2: {fileID: 0}
+  pistolFlame: {fileID: 0}
+  pistolDistortion: {fileID: 0}
+  pistolSmoke: {fileID: 440460294977082030, guid: 2fb5f63db9ad94b4c857f42905c530f8,
+    type: 3}
+  pistolCartridgeEject: {fileID: 0}
+  pistolSound1: {fileID: 0}
+  pistolSound2: {fileID: 0}
+  pistolSound3: {fileID: 0}
+  pistolSound4: {fileID: 0}
+  rifle: {fileID: 0}
+  rifleSlot: {fileID: 0}
+  rifleHolding: {fileID: 0}
+  rifleSpawnMuzzle: {fileID: 0}
+  rifleShellPoint: {fileID: 0}
+  rifleMuzzleFlash1: {fileID: 0}
+  rifleMuzzleFlash2: {fileID: 0}
+  rifleFlame: {fileID: 0}
+  rifleDistortion: {fileID: 0}
+  rifleSmoke: {fileID: 4895962290354523701, guid: 5886f0ba76854d4478de896a0711a298,
+    type: 3}
+  rifleCartridgeEject: {fileID: 0}
+  rifleSound1: {fileID: 0}
+  rifleSound2: {fileID: 0}
+  rifleSound3: {fileID: 0}
+  rifleSound4: {fileID: 0}
+  knife: {fileID: 0}
+  knifeHolding: {fileID: 0}
+  knifeSlot: {fileID: 0}
+  audioSource: {fileID: 0}
+--- !u!114 &2175565011004455803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2175565011004455805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a243a079a39967a459ede032dd02b554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletSpawnPistol: {fileID: 0}
+  bulletSpawnRifle: {fileID: 0}
+  lazerPistol: {fileID: 0}
+  lazerRifle: {fileID: 0}
+  crosshair: {fileID: 0}
+  grimAnimator: {fileID: 0}
+  ground: {fileID: 0}
+  gameGround: {fileID: 0}
+  shootingMask:
+    serializedVersion: 2
+    m_Bits: 0
