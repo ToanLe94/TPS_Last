@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Grim
+  - Rock
+  - Wood
+  - Glass
+  - Grass
+  - Rifle
+  - Pistol
+  - Foliage
+  - Dirt
+  - Metal
+  - Water
+  - Crosshair
+  - Stone
+  - Brick
+  - Blood
+  - Zombie
+  - Head
+  - Check
+  - Upper Arm Right
+  - Fore Arm Right
+  - Upper Arm Left
+  - Fore Arm Left
+  - Thigh Leg Right
+  - Shin Leg Right
+  - Foot Leg Right
+  - Thigh Leg Left
+  - Shin Leg Left
+  - Foot Leg Left
+  - Heart
+  - bullet
+  - GROUND
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcessing
+  - Grim
+  - Zombie
+  - Ground
+  - Obstacle
+  - Wall
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
