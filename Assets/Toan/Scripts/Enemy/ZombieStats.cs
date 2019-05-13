@@ -28,7 +28,7 @@ public class ZombieStats : CharacterStats
         {
             script.enabled = false;
         }
-        animator.CrossFadeInFixedTime("zombie death", 0.5f);
+        animator.CrossFadeInFixedTime("zombie death", 1);
         RemoveColliders(GetComponents<Collider>());
         RemoveColliders(GetComponentsInChildren<Collider>());
 

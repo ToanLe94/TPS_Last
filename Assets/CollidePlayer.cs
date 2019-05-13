@@ -47,7 +47,7 @@ public class CollidePlayer : MonoBehaviour
                 player.GetComponent<CharacterStats>().Damage(10);
                 CreateBlood(player.transform.position + new Vector3(0, 0.9f, 0));
                 player.GetComponent<CharacterStats>().SetIsAttacked();
-                player.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, force));
+                //player.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, force));
 
             }
 

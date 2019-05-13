@@ -32,6 +32,7 @@ public abstract class Enemy : MonoBehaviour
     protected float nextTimeToFire = 0.0f;
     protected float fireRate = 6.0f;
 
+    
     [Header("Head outside and inside")]
     [SerializeField] protected GameObject headOutside;
     [SerializeField] protected GameObject headInside;

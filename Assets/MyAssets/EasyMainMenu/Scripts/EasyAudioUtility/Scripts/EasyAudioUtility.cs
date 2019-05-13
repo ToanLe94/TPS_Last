@@ -6,13 +6,13 @@ public class EasyAudioUtility : MonoBehaviour
 {
     //Static reference
     public static EasyAudioUtility instance;
-
     //Master Audio Mixer
     public AudioMixerGroup mixerGroup;
 
     //Helper Class
     public EasyAudioUtility_Helper[] helper;
 
+    public EasyAudioUtility_SceneManager soundSceneManager;
     void Awake()
     {
         //creating static instance so we don't need any physical reference
@@ -79,5 +79,26 @@ public class EasyAudioUtility : MonoBehaviour
         //Stopping
         h.source.Stop();
     }
+    public static void InstantiateClip(Vector3 pos, AudioClip clip, float time = 2f, bool randomizePitch = false, float randomPitchMin = 1, float randomPitchMax = 1)
+    {
+        GameObject clone = new GameObject("one shot audio");
+        clone.transform.position = pos;
+        AudioSource audio = clone.AddComponent<AudioSource>();
+        audio.spatialBlend = 1;
+        audio.clip = clip;
+        audio.Play();
 
+        Destroy(clone, time);
+    }
+    public static void PlaySound(AudioSource audioS, AudioClip clip, bool randomizePitch = false, float randomPitchMin = 1, float randomPitchMax = 1)
+    {
+
+        audioS.clip = clip;
+        audioS.loop = true;
+        if (randomizePitch == true)
+        {
+            audioS.pitch = UnityEngine.Random.Range(randomPitchMin, randomPitchMax);
+        }
+        audioS.Play();
+    }
 }

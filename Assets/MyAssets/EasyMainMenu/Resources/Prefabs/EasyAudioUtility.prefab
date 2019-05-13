@@ -70,6 +70,7 @@ MonoBehaviour:
     pitchVariance: 0
     loop: 1
     source: {fileID: 0}
+  soundSceneManager: {fileID: 114902284770409860}
 --- !u!114 &114902284770409860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,4 +83,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30229aea83058b843b4cdf837ae552fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: []
+  manager:
+  - SceneName: Map_01
+    name: BG
+    clip: {fileID: 8300000, guid: 94778438ad080004aadc03fd5045400b, type: 3}
+  - SceneName: Map_02
+    name: BG
+    clip: {fileID: 8300000, guid: 3697fe01ddbb1864e8db6fb9b078302c, type: 3}
+  - SceneName: Map_03
+    name: BG
+    clip: {fileID: 8300000, guid: 9dd1fdbb61ed1f44a9aea494129d83b0, type: 3}

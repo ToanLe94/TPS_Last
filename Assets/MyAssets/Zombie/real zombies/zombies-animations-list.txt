@@ -1,0 +1,31 @@
+000 - 003     T-POSE  	
+005 - 100     Idle1   	
+110 - 240     Idle2   	
+250 - 330     Idle3   	
+340 - 390     walk    	
+400 - 440     run     	
+450 - 500     hit reaction1
+500 - 550     hit reaction2
+550 - 600     hit reaction3
+600 - 650     Attack1	   
+650 - 720     Attack2	   
+720 - 780     death1	   
+800 - 870     death2	
+900 - 980     death3	
+1000 - 1150   stand up	
+1160 - 1200   eat_start
+1200 - 1290   eat_loop	
+1290 - 1350   eat_end	   
+1360 - 1400   walk_back
+1410 - 1430   run_fast	
+1440 - 1490   crawl
+1490 - 1550   crawl attack
+1550 - 1600   crawl idle
+1600 - 1650   crawl death
+1660 - 1700   lunatic walk
+1710 - 1738   pose defence
+1740 - 1769   pose 0	
+1770 - 1840   arise-01	
+1860 - 1970   arise-02	
+1990 - 2230   arise-03	
+2235 - 2475   arise-04	

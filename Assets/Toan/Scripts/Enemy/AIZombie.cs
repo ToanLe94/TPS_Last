@@ -177,7 +177,7 @@ public class AIZombie : MonoBehaviour
                     Vector3 dir = c.transform.position - start;
                     float sightAngle = Vector3.Angle(dir, transform.forward);
                     //Debug.Log("angle Dir vs tranform.forward" + sightAngle);
-                    Debug.DrawRay(start, dir, Color.red, sight.sightRange);
+                    //Debug.DrawRay(start, dir, Color.red, sight.sightRange);
                     if (Physics.Raycast(start, dir, out hit, sight.sightRange, sight.sightLayers))
                     {
 

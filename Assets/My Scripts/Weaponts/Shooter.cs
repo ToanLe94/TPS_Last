@@ -6,6 +6,7 @@ using UnityEngine;
 public enum EMaterialsMode
 {
     None = 0,
+    Ground,
     Brick,
     Rock,
     Dirt,
@@ -25,7 +26,7 @@ public class Shooter : MonoBehaviour
     private float minX = 0.0f, minY = 0.0f;
     private float nextTimeToFire = 0.0f;
 
-    private float distance = 150.0f;
+    public float distance = 150.0f;
     private float damage = 10.0f;
     private float impaceForce = 0.0f;
     private float fireRate = 6.0f;
@@ -81,6 +82,7 @@ public class Shooter : MonoBehaviour
     #region Functions.
     private void Awake()
     {
+        
         crosshair.SetActive(isCrosshairActive);
 
         lazerPistol.gameObject.SetActive(isCrosshairActive);
@@ -130,7 +132,7 @@ public class Shooter : MonoBehaviour
     private void AimLine()
     {
         RandomPostionAnim();
-
+        Debug.DrawRay(ray.origin, ray.direction,  Color.green , distance);
         if (Physics.Raycast(ray, out rayHit, distance, shootingMask))
         {
             GetTagObject();
@@ -234,9 +236,10 @@ public class Shooter : MonoBehaviour
         rayHit.rigidbody?.AddForce(-rayHit.normal * impaceForce);
         #endregion
     }
-
+    // note rayhit.tranform hoac .gameobject thi tra ve thang nao co rigidbody
     private void GetTagObject()
     {
+        Debug.Log("raycasthit licker tranform :" + rayHit.transform.tag);
         #region Get Material Object.
         if (rayHit.transform.CompareTag("Brick"))
         {
@@ -272,6 +275,7 @@ public class Shooter : MonoBehaviour
         {
             eEnemyBody = EEnemyBody.None;
             eMaterialsMode = EMaterialsMode.Metal;
+            Debug.Log("raycast hit Metallllllllllllllllllll ");
         }
         else if (rayHit.transform.CompareTag("Water"))
         {
@@ -285,67 +289,93 @@ public class Shooter : MonoBehaviour
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.Head;
+            Debug.Log("eEnemyBody Head");
         }
         else if (rayHit.transform.CompareTag("Check"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.Check;
+            Debug.Log("eEnemyBody Check");
+
         }
         else if (rayHit.transform.CompareTag("Heart"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.Heart;
+            Debug.Log("eEnemyBody Heart");
+
         }
         else if (rayHit.transform.CompareTag("Upper Arm Right"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.UpperArmRight;
+            Debug.Log("eEnemyBody UpperArmRight");
+
         }
         else if (rayHit.transform.CompareTag("Fore Arm Right"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.ForeArmRight;
+            Debug.Log("eEnemyBody Fore Arm Right");
+
         }
         else if (rayHit.transform.CompareTag("Upper Arm Left"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.UpperArmLeft;
+            Debug.Log("eEnemyBody Upper Arm Left");
+
         }
         else if (rayHit.transform.CompareTag("Fore Arm Left"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.ForeArmLeft;
+            Debug.Log("eEnemyBody Fore Arm Left");
+
         }
         else if (rayHit.transform.CompareTag("Thigh Leg Right"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.ThighLegRight;
+            Debug.Log("eEnemyBody Thigh Leg Right");
+
+
         }
         else if (rayHit.transform.CompareTag("Shin Leg Right"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.ShinLegRight;
+            Debug.Log("eEnemyBody Shin Leg Right");
+
         }
         else if (rayHit.transform.CompareTag("Foot Leg Right"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.FootLegRight;
+            Debug.Log("eEnemyBody Foot Leg Right");
+
         }
         else if (rayHit.transform.CompareTag("Thigh Leg Left"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.ThighLegLeft;
+            Debug.Log("eEnemyBody Thigh Leg Left");
+
         }
         else if (rayHit.transform.CompareTag("Shin Leg Left"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.ShinLegLeft;
+            Debug.Log("eEnemyBody Shin Leg Left");
+
         }
         else if (rayHit.transform.CompareTag("Foot Leg Left"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.FootLegLeft;
-        } 
+            Debug.Log("eEnemyBody Foot Leg Left");
+
+        }
         #endregion
     }
 
@@ -356,25 +386,43 @@ public class Shooter : MonoBehaviour
         if (grimAnimator.GetIsPistol())
         {
             currentBulletSpawn = bulletSpawnPistol;
-
             V3Direction = Camera.main.transform.forward;
+            //V3Direction = currentBulletSpawn.forward;
+
+
+            //Toan Edit
+            //currentBulletSpawn.position = bulletSpawnPistol.position;
+            //currentBulletSpawn.rotation = bulletSpawnPistol.rotation;
+            //V3Direction = currentBulletSpawn.forward;
         }
         else
         {
             currentBulletSpawn = bulletSpawnRifle;
-
             V3Direction = Camera.main.transform.forward;
+            //V3Direction = currentBulletSpawn.forward;
+
+            //Toan Edit
+            //currentBulletSpawn.position = bulletSpawnRifle.position;
+            //currentBulletSpawn.rotation = bulletSpawnRifle.rotation;
+            //V3Direction = currentBulletSpawn.forward;
         }
 
         if (!grimAnimator.GetIsPistol() && grimAnimator.GetIsFire())
         {
             currentBulletSpawn = bulletSpawnRifle;
 
+            //Toan Edit
+            //currentBulletSpawn.position = bulletSpawnRifle.position;
+            //currentBulletSpawn.rotation = bulletSpawnRifle.rotation;
+            //
             V3Euler.x = UnityEngine.Random.Range(minX, maxX);
             V3Euler.y = UnityEngine.Random.Range(minY, maxY);
             V3Direction = new Vector3(Camera.main.transform.forward.x + V3Euler.x,
                                               Camera.main.transform.forward.y + V3Euler.y,
                                               Camera.main.transform.forward.z);
+            //V3Direction = new Vector3(currentBulletSpawn.forward.x + V3Euler.x,
+            //                                  currentBulletSpawn.forward.y + V3Euler.y,
+            //                                  currentBulletSpawn.forward.z);
         }
 
         ray = new Ray(currentBulletSpawn.position, V3Direction);

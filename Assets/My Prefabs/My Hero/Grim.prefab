@@ -1102,6 +1102,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee63a5441fa39214b891b6b0c41900a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioClipsGround:
+  - {fileID: 8300000, guid: f374e4bb0a72e1e4998b7c00e375c793, type: 3}
+  - {fileID: 8300000, guid: cfd281a9e64c1264b9f2b42fb9096a9e, type: 3}
+  - {fileID: 8300000, guid: 4bfe0f71ce2f2aa459fe0c0e9640762c, type: 3}
+  - {fileID: 8300000, guid: 03da0528f7ce83849b2b517a14f35226, type: 3}
+  - {fileID: 8300000, guid: 0e3bc1a5cab232541a630796f716956a, type: 3}
+  - {fileID: 8300000, guid: 2e100a08b43f225439751a5649eb08c6, type: 3}
+  - {fileID: 8300000, guid: a2f06c829e62c9d49b6dc43e02376f2b, type: 3}
+  - {fileID: 8300000, guid: 261aaa6d499b36540b86ff9e9ca9d79d, type: 3}
+  - {fileID: 8300000, guid: be00c245d1162564380e0441ab3367ba, type: 3}
+  - {fileID: 8300000, guid: b632dbfd31dbbe1479f67126392d2221, type: 3}
+  - {fileID: 8300000, guid: 77b0958831ad0c449bf6166b83729680, type: 3}
+  - {fileID: 8300000, guid: 083f3c2f1983dd8419a9336eef471567, type: 3}
   audioClipsGlass:
   - {fileID: 8300000, guid: 37cf78e8b5ae2914e85409460f9f10d5, type: 3}
   - {fileID: 8300000, guid: 14708eb4859ba3c47806030caca9beb3, type: 3}
@@ -1133,10 +1146,16 @@ MonoBehaviour:
   - {fileID: 8300000, guid: bdaa4cd0a852ed94e9fd381de36fa7ed, type: 3}
   - {fileID: 8300000, guid: 34c50ff8e4593df49b38069617930998, type: 3}
   - {fileID: 8300000, guid: 84792a224b7a9d64cae6d6ced67779a8, type: 3}
+  audioClipsBreathing:
+  - {fileID: 8300000, guid: a9af0f48e9da0ed47a712bb992c387a4, type: 3}
+  - {fileID: 8300000, guid: b7630a1d193e5f149a792dc7cb0b0bac, type: 3}
+  - {fileID: 8300000, guid: e3232a1934b1c4343827138fc8c2208b, type: 3}
+  - {fileID: 8300000, guid: b984cd7132cdd6d418f2d931bf0cd3e1, type: 3}
   audioSource: {fileID: 514127285}
   water1: {fileID: 0}
   water2: {fileID: 0}
   grimAnimator: {fileID: 934910865}
+  grimMoment: {fileID: 934910864}
 --- !u!65 &1264045824
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1165,7 +1184,12 @@ MonoBehaviour:
   health: 100
   isZombie: 0
   faction: 0
-  scriptsToDisable: []
+  scriptsToDisable:
+  - {fileID: 2278509117826221196}
+  - {fileID: 1281267836071836387}
+  - {fileID: 514127291}
+  - {fileID: 934910864}
+  - {fileID: 934910865}
 --- !u!143 &6515526611627097948
 CharacterController:
   m_ObjectHideFlags: 0

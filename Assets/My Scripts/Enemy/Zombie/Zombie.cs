@@ -7,8 +7,21 @@ public class Zombie : Enemy
     #region Functions.
     private void Start()
     {
-        headInside.SetActive(false);
-        headOutside.SetActive(true);
+        //Toand edit
+        shooter = FindObjectOfType<Shooter>();
+        grimAnimator = FindObjectOfType<GrimAnimator>();
+        ///
+
+        if (headInside)
+        {
+            headInside.SetActive(false);
+
+        }
+        if (headOutside)
+        {
+            headOutside.SetActive(true);
+
+        }
 
         stateIdle = UnityEngine.Random.Range(1, 3);
         enemyAnimator.SetInteger("Int State", stateIdle);
@@ -57,77 +70,77 @@ public class Zombie : Enemy
                 break;
             case EEnemyBody.Check:
 
-                enemyAnimator.CrossFadeInFixedTime("damage center",0.5f);
+                enemyAnimator.CrossFadeInFixedTime("damage center",1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.UpperArmRight:
 
-                enemyAnimator.CrossFadeInFixedTime("zombie hit stand right",0.5f);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit stand right",1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.ForeArmRight:
 
-                enemyAnimator.CrossFadeInFixedTime("zombie hit stand right",0.5f);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit stand right",1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.UpperArmLeft:
 
-                enemyAnimator.CrossFadeInFixedTime("zombie hit stand left",0.5f);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit stand left",1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.ForeArmLeft:
 
-                enemyAnimator.CrossFadeInFixedTime("zombie hit stand left",0.5f);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit stand left",1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.ThighLegRight:
 
-                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward right",0.5f);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward right",1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.ShinLegRight:
 
-                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward right", 0.5f);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward right", 1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.FootLegRight:
 
-                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward right", 0.5f);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward right", 1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.ThighLegLeft:
 
-                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward left",0.5f);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward left",1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.ShinLegLeft:
 
-                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward left", 0.5f);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward left", 1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.FootLegLeft:
 
-                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward left", 0.5f);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward left", 1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();

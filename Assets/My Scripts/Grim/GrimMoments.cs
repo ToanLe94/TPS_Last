@@ -22,7 +22,14 @@ public class GrimMoments : MonoBehaviour
     [SerializeField] private GrimAnimator grimAnimator;
 
     #endregion
-
+    public float getVertical()
+    {
+        return vertical;
+    }
+    public float getHorizontal()
+    {
+        return horizontal;
+    }
     #region Get Functions.
     public float GetSensivity()
     {

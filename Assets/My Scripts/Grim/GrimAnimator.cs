@@ -336,6 +336,10 @@ public class GrimAnimator : MonoBehaviour
 
     private void FootStepCollision(Collider collider)
     {
+        if (collider.transform.tag == "GROUND")
+        {
+            objectFootStep = (int)EMaterialsMode.Ground;
+        }
         if (collider.transform.tag == "Glass")
         {
             objectFootStep = (int)EMaterialsMode.Glass;

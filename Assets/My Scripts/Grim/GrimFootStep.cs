@@ -6,6 +6,7 @@ public class GrimFootStep : MonoBehaviour
 {
     #region Variable.
     [Header("Audio")]
+    [SerializeField] private AudioClip[] audioClipsGround;
     [SerializeField] private AudioClip[] audioClipsGlass;
     [SerializeField] private AudioClip[] audioClipsGrass;
     [SerializeField] private AudioClip[] audioClipsWood;
@@ -13,6 +14,10 @@ public class GrimFootStep : MonoBehaviour
     [SerializeField] private AudioClip[] audioClipsWater;
     [SerializeField] private AudioClip[] audioClipsDirt;
     [SerializeField] private AudioClip[] audioClipsMetal;
+
+    [SerializeField] private AudioClip[] audioClipsBreathing;
+
+
     private AudioClip currentAudioClips;
     [SerializeField] private AudioSource audioSource;
 
@@ -20,7 +25,9 @@ public class GrimFootStep : MonoBehaviour
     [SerializeField] private ParticleSystem water1;
     [SerializeField] private ParticleSystem water2;
 
+
     [SerializeField] private GrimAnimator grimAnimator;
+    [SerializeField] private GrimMoments grimMoment;
 
     #endregion
 
@@ -29,10 +36,33 @@ public class GrimFootStep : MonoBehaviour
     {
         currentAudioClips = GetRamdomAudioClip();
         audioSource.PlayOneShot(currentAudioClips);
+        
     }
+    int currentSound = -1;
+    float countTime=0;
+    private void SoundBreathing(int sound)
+    {
+        if (currentSound != sound)
+        {
+            countTime += Time.deltaTime;
+            if (countTime >1)
+            {
+                EasyAudioUtility.PlaySound(audioSource, audioClipsBreathing[sound]);
+                currentSound = sound;
+                countTime = 0.0f;
+            }
+           
 
+        }
+    }
+    
     private AudioClip GetRamdomAudioClip()
     {
+        if (grimAnimator.GetObjectFootStep() == (int)EMaterialsMode.Ground)
+        {
+            return audioClipsGround[UnityEngine.Random.Range(0, audioClipsGrass.Length)];
+
+        }
         if (grimAnimator.GetObjectFootStep() == (int)EMaterialsMode.Grass)
         {
             return audioClipsGrass[UnityEngine.Random.Range(0, audioClipsGrass.Length)];
@@ -77,4 +107,20 @@ public class GrimFootStep : MonoBehaviour
         return currentAudioClips;
     }
     #endregion
+
+    private void Update()
+    {
+        if (grimMoment.getVertical() == 0 && grimMoment.getHorizontal() == 0)
+        {
+            SoundBreathing(0);
+        }
+        else if (grimAnimator.GetIsRun() == false)
+        {
+            SoundBreathing(1);
+        }
+        else
+        {
+            SoundBreathing(2);
+        }
+    }
 }

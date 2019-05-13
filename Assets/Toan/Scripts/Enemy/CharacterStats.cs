@@ -64,12 +64,12 @@ public class CharacterStats : MonoBehaviour {
 
         if (grimAnimator.GetIsPistol())
         {
-            animator.CrossFadeInFixedTime("Rifle_Hit_L_RM", 0.2f);
+            animator.CrossFadeInFixedTime("Rifle_Hit_L_RM", 1);
 
         }
         else if (!grimAnimator.GetIsPistol())
         {
-            animator.CrossFadeInFixedTime("Rifle_Hit_L_RM", 0.2f);
+            animator.CrossFadeInFixedTime("Rifle_Hit_L_RM", 1);
 
         }
     }
