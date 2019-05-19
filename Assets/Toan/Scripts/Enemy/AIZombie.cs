@@ -8,7 +8,7 @@ using System.Collections;
 public class AIZombie : MonoBehaviour
 {
 
-	private UnityEngine.AI.NavMeshAgent navmesh;
+	private  UnityEngine.AI.NavMeshAgent navmesh;
 	private CharacterMovement characterMove { get { return GetComponent<CharacterMovement> (); } set { characterMove = value; } }
 	private Animator animator { get { return GetComponent<Animator> (); } set { animator = value; } }
 	private CharacterStats characterStats { get { return GetComponent<CharacterStats> (); } set { characterStats = value; } }
@@ -80,8 +80,8 @@ public class AIZombie : MonoBehaviour
     bool isBittingAtNeckTarget;
 	// Use this for initialization
 	void Start () {
-        //navmesh = GetComponentInChildren<UnityEngine.AI.NavMeshAgent> ();
-        
+        //navmesh = GetComponentInChildren<UnityEngine.AI.NavMeshAgent>();
+
         navmesh = GetComponent<UnityEngine.AI.NavMeshAgent>();
         //navmesh.updatePosition = false;
         isEnemyLookAround += EnemyLookAround;

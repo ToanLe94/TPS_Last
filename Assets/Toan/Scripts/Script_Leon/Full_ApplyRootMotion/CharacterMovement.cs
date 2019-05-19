@@ -96,13 +96,13 @@ public class CharacterMovement : MonoBehaviour
     {
 
         RaycastHit hit;
-        Vector3 start = transform.position + transform.up*heightCharacter;
-        //Vector3 start = transform.position ;
+        //Vector3 start = transform.position + transform.up*heightCharacter;
+        Vector3 start = transform.position;
 
         Vector3 dir = Vector3.down;
         float radius = characterController.radius;
         Debug.DrawRay(start, dir, Color.yellow, 0.1f);
-        if (Physics.SphereCast(start, radius, dir, out hit, heightCharacter, physics.groundLayers))
+        if (Physics.SphereCast(start, radius, dir, out hit, 0.0001f, physics.groundLayers))
         {
             return true;
         }

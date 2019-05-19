@@ -101,4 +101,22 @@ public class EasyAudioUtility : MonoBehaviour
         }
         audioS.Play();
     }
+    public static void PlayOptionalSound(AudioSource audioS, AudioClip clip, int spatialBlend, bool isLoop,bool isPlayOnShot , bool randomizePitch = false, float randomPitchMin = 1, float randomPitchMax = 1)
+    {
+        audioS.clip = clip;
+        audioS.loop = isLoop;
+        audioS.spatialBlend = spatialBlend;
+        if (randomizePitch == true)
+        {
+            audioS.pitch = UnityEngine.Random.Range(randomPitchMin, randomPitchMax);
+        }
+        if (isPlayOnShot)
+        {
+            audioS.PlayOneShot(clip);
+        }
+        else
+        {
+            audioS.Play();
+        }
+    }
 }

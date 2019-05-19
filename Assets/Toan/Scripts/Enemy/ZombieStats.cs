@@ -18,7 +18,7 @@ public class ZombieStats : CharacterStats
   
     public override void Die()
     {
-        
+        animator.CrossFadeInFixedTime("zombie death",0.5f);
         if (scriptsToDisable.Length == 0)
         {
             Debug.Log("All scripts still working on this character but this is dead.");
@@ -28,7 +28,6 @@ public class ZombieStats : CharacterStats
         {
             script.enabled = false;
         }
-        animator.CrossFadeInFixedTime("zombie death", 1);
         RemoveColliders(GetComponents<Collider>());
         RemoveColliders(GetComponentsInChildren<Collider>());
 

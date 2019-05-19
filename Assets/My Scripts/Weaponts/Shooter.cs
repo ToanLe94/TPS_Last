@@ -241,43 +241,43 @@ public class Shooter : MonoBehaviour
     {
         Debug.Log("raycasthit licker tranform :" + rayHit.transform.tag);
         #region Get Material Object.
-        if (rayHit.transform.CompareTag("Brick"))
+        if (rayHit.collider.CompareTag("Brick"))
         {
             eEnemyBody = EEnemyBody.None;
             eMaterialsMode = EMaterialsMode.Brick;
         }
-        else if(rayHit.transform.CompareTag("Rock"))
+        else if(rayHit.collider.CompareTag("Rock"))
         {
             eEnemyBody = EEnemyBody.None;
             eMaterialsMode = EMaterialsMode.Rock;
         }
-        else if (rayHit.transform.CompareTag("Wood"))
+        else if (rayHit.collider.CompareTag("Wood"))
         {
             eEnemyBody = EEnemyBody.None;
             eMaterialsMode = EMaterialsMode.Wood;
         }
-        else if (rayHit.transform.CompareTag("Glass"))
+        else if (rayHit.collider.CompareTag("Glass"))
         {
             eEnemyBody = EEnemyBody.None;
             eMaterialsMode = EMaterialsMode.Glass;
         }
-        else if (rayHit.transform.CompareTag("Grass"))
+        else if (rayHit.collider.CompareTag("Grass"))
         {
             eEnemyBody = EEnemyBody.None;
             eMaterialsMode = EMaterialsMode.Grass;
         }
-        else if (rayHit.transform.CompareTag("Dirt"))
+        else if (rayHit.collider.CompareTag("Dirt"))
         {
             eEnemyBody = EEnemyBody.None;
             eMaterialsMode = EMaterialsMode.Dirt;
         }
-        else if (rayHit.transform.CompareTag("Metal"))
+        else if (rayHit.collider.CompareTag("Metal"))
         {
             eEnemyBody = EEnemyBody.None;
             eMaterialsMode = EMaterialsMode.Metal;
             Debug.Log("raycast hit Metallllllllllllllllllll ");
         }
-        else if (rayHit.transform.CompareTag("Water"))
+        else if (rayHit.collider.CompareTag("Water"))
         {
             eEnemyBody = EEnemyBody.None;
             eMaterialsMode = EMaterialsMode.Water;
@@ -285,55 +285,55 @@ public class Shooter : MonoBehaviour
         #endregion
 
         #region Get Enemy Body.
-        if (rayHit.transform.CompareTag("Head"))
+        if (rayHit.collider.CompareTag("Head"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.Head;
             Debug.Log("eEnemyBody Head");
         }
-        else if (rayHit.transform.CompareTag("Check"))
+        else if (rayHit.collider.CompareTag("Check"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.Check;
             Debug.Log("eEnemyBody Check");
 
         }
-        else if (rayHit.transform.CompareTag("Heart"))
+        else if (rayHit.collider.CompareTag("Heart"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.Heart;
             Debug.Log("eEnemyBody Heart");
 
         }
-        else if (rayHit.transform.CompareTag("Upper Arm Right"))
+        else if (rayHit.collider.CompareTag("Upper Arm Right"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.UpperArmRight;
             Debug.Log("eEnemyBody UpperArmRight");
 
         }
-        else if (rayHit.transform.CompareTag("Fore Arm Right"))
+        else if (rayHit.collider.CompareTag("Fore Arm Right"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.ForeArmRight;
             Debug.Log("eEnemyBody Fore Arm Right");
 
         }
-        else if (rayHit.transform.CompareTag("Upper Arm Left"))
+        else if (rayHit.collider.CompareTag("Upper Arm Left"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.UpperArmLeft;
             Debug.Log("eEnemyBody Upper Arm Left");
 
         }
-        else if (rayHit.transform.CompareTag("Fore Arm Left"))
+        else if (rayHit.collider.CompareTag("Fore Arm Left"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.ForeArmLeft;
             Debug.Log("eEnemyBody Fore Arm Left");
 
         }
-        else if (rayHit.transform.CompareTag("Thigh Leg Right"))
+        else if (rayHit.collider.CompareTag("Thigh Leg Right"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.ThighLegRight;
@@ -341,35 +341,35 @@ public class Shooter : MonoBehaviour
 
 
         }
-        else if (rayHit.transform.CompareTag("Shin Leg Right"))
+        else if (rayHit.collider.CompareTag("Shin Leg Right"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.ShinLegRight;
             Debug.Log("eEnemyBody Shin Leg Right");
 
         }
-        else if (rayHit.transform.CompareTag("Foot Leg Right"))
+        else if (rayHit.collider.CompareTag("Foot Leg Right"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.FootLegRight;
             Debug.Log("eEnemyBody Foot Leg Right");
 
         }
-        else if (rayHit.transform.CompareTag("Thigh Leg Left"))
+        else if (rayHit.collider.CompareTag("Thigh Leg Left"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.ThighLegLeft;
             Debug.Log("eEnemyBody Thigh Leg Left");
 
         }
-        else if (rayHit.transform.CompareTag("Shin Leg Left"))
+        else if (rayHit.collider.CompareTag("Shin Leg Left"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.ShinLegLeft;
             Debug.Log("eEnemyBody Shin Leg Left");
 
         }
-        else if (rayHit.transform.CompareTag("Foot Leg Left"))
+        else if (rayHit.collider.CompareTag("Foot Leg Left"))
         {
             eMaterialsMode = EMaterialsMode.None;
             eEnemyBody = EEnemyBody.FootLegLeft;

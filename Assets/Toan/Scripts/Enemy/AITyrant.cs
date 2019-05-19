@@ -551,13 +551,17 @@ public class AITyrant : MonoBehaviour
         aiStateAttack = (AIStateAttack)UnityEngine.Random.Range(2, 5);
         if (aiStateAttack == AIStateAttack.None)
         {
-            aiStateAttack = AIStateAttack.JumpAttack;
+            aiStateAttack = AIStateAttack.WalkAndAttack;
         }
         Debug.Log("aistateAttack" + aiStateAttack);
         if (aiStateAttack == AIStateAttack.RunAndAttack || aiStateAttack == AIStateAttack.JumpAttack)
         {
             //animator.SetTrigger("Scream");
-            animator.CrossFadeInFixedTime("Scream", 0.25f);
+            int rate = UnityEngine.Random.Range(1, 3);
+            if (rate == 1 )
+            {
+                animator.CrossFadeInFixedTime("Scream", 0.25f);
+            }
             if (aiStateAttack == AIStateAttack.RunAndAttack)
             {
                 var distance = Vector3.Distance(transform.position, target.position);
@@ -660,6 +664,7 @@ public class AITyrant : MonoBehaviour
                 if (navmesh.remainingDistance <= navmesh.stoppingDistance)
                 {
                     //walkingToDest = false;
+
                     forward = LerpSpeed(forward, 0, 3);
 
                     if (forward <= 0.1)
@@ -672,6 +677,7 @@ public class AITyrant : MonoBehaviour
                 }
                 else
                 {
+
                     //walkingToDest = true;
                     LookAtPosition(navmesh.steeringTarget);
                     forward = LerpSpeed(forward, 1f, 3);

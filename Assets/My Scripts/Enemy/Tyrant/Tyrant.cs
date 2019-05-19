@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class Tyrant : Enemy
 {
+    [Header("SFX")]
+    public AudioClip[] soundAttack;
+    public AudioClip[] soundStep;
+    public AudioClip soundRoar;
+    public AudioClip soundJumpAttack;
+    public AudioClip[] soundHurt;
+
     #region Functions
     private void Start()
     {
@@ -86,7 +93,32 @@ public class Tyrant : Enemy
                 break;
         }
     }
+    public void PlaySFXAttack()
+    {
+        AudioClip clip = soundAttack[UnityEngine.Random.Range(0, soundAttack.Length)];
+        EasyAudioUtility.PlayOptionalSound(audioSource, clip, 1, false,true);
 
+    }
+    public void PlaySFXStep()
+    {
+        AudioClip clip = soundStep[UnityEngine.Random.Range(0, soundStep.Length)];
+        EasyAudioUtility.PlayOptionalSound(audioSource, clip, 1, false, true);
+    }
+    public void PlaySFXHurt()
+    {
+        AudioClip clip = soundHurt[UnityEngine.Random.Range(0, soundHurt.Length)];
+        EasyAudioUtility.PlayOptionalSound(audioSource, clip, 1, false, true);
+    }
+    public void PlaySFXjumpAttack()
+    {
+        AudioClip clip = soundJumpAttack;
+        EasyAudioUtility.PlayOptionalSound(audioSource, clip, 1, false, true);
+    }
+    public void PlaySFXRoar()
+    {
+        AudioClip clip = soundRoar;
+        EasyAudioUtility.PlayOptionalSound(audioSource, clip, 1, false, true);
+    }
     private IEnumerator HeartExplosion()
     {
         yield return new WaitForFixedUpdate();

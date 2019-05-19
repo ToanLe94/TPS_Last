@@ -37,7 +37,7 @@ public class Fader : MonoBehaviour {
     {
         Debug.Log("Load scene " + sceneToLoad);
         yield return new WaitForSeconds(1f);
-        var loadingOpr = SceneManager.LoadSceneAsync(sceneToLoad);
+        var loadingOpr = SceneManager.LoadSceneAsync(sceneToLoad,LoadSceneMode.Single);
         while (!loadingOpr.isDone)
         {
             loadingUI.SetLoadingProgress(loadingOpr.progress);

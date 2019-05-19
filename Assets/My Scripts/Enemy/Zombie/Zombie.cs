@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Zombie : Enemy
 {
+    [Header("SFX")]
+    [SerializeField] private AudioClip[] soundIdle;
+    [SerializeField] private AudioClip[] soundMove;
+    [SerializeField] private AudioClip[] soundAttack;
+    [SerializeField] private AudioClip[] soundHurt;
+
     #region Functions.
     private void Start()
     {
@@ -70,42 +76,42 @@ public class Zombie : Enemy
                 break;
             case EEnemyBody.Check:
 
-                enemyAnimator.CrossFadeInFixedTime("damage center",1);
+                enemyAnimator.CrossFadeInFixedTime("damage center", 1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.UpperArmRight:
 
-                enemyAnimator.CrossFadeInFixedTime("zombie hit stand right",1);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit stand right", 1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.ForeArmRight:
 
-                enemyAnimator.CrossFadeInFixedTime("zombie hit stand right",1);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit stand right", 1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.UpperArmLeft:
 
-                enemyAnimator.CrossFadeInFixedTime("zombie hit stand left",1);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit stand left", 1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.ForeArmLeft:
 
-                enemyAnimator.CrossFadeInFixedTime("zombie hit stand left",1);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit stand left", 1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.ThighLegRight:
 
-                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward right",1);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward right", 1);
                 GetComponent<CharacterStats>().Damage(40);
 
                 TimeToCreateBulletHole();
@@ -125,21 +131,16 @@ public class Zombie : Enemy
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.ThighLegLeft:
-
-                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward left",1);
+                enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward left", 1);
                 GetComponent<CharacterStats>().Damage(40);
-
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.ShinLegLeft:
-
                 enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward left", 1);
                 GetComponent<CharacterStats>().Damage(40);
-
                 TimeToCreateBulletHole();
                 break;
             case EEnemyBody.FootLegLeft:
-
                 enemyAnimator.CrossFadeInFixedTime("zombie hit leg backward left", 1);
                 GetComponent<CharacterStats>().Damage(40);
 
@@ -175,4 +176,20 @@ public class Zombie : Enemy
         yield return null;
     }
     #endregion
+    public void PlaySFXIdle()
+    {
+        AudioClip clip = soundIdle[UnityEngine.Random.Range(0, soundIdle.Length)];
+        EasyAudioUtility.PlayOptionalSound(audioSource, clip, 1, false, false);
+        
+    }
+    public void PlaySFXMoving()
+    {
+        AudioClip clip = soundMove[UnityEngine.Random.Range(0, soundMove.Length)];
+        EasyAudioUtility.PlayOptionalSound(audioSource, clip, 1, false, false);
+    }
+    public void PlaySFXHurt()
+    {
+        AudioClip clip = soundHurt[UnityEngine.Random.Range(0, soundHurt.Length)];
+        EasyAudioUtility.PlayOptionalSound(audioSource, clip, 1, false, false);
+    }
 }

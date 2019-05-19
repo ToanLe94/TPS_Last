@@ -16,6 +16,7 @@ public class GrimFootStep : MonoBehaviour
     [SerializeField] private AudioClip[] audioClipsMetal;
 
     [SerializeField] private AudioClip[] audioClipsBreathing;
+    [SerializeField] private AudioClip[] audioClipsBlood;
 
 
     private AudioClip currentAudioClips;
@@ -55,7 +56,11 @@ public class GrimFootStep : MonoBehaviour
 
         }
     }
-    
+    public void PlaySoundHurt()
+    {
+        AudioClip clip = audioClipsBlood[UnityEngine.Random.Range(0, audioClipsBlood.Length)];
+        EasyAudioUtility.PlayOptionalSound(audioSource, clip, 1, false, false);
+    }
     private AudioClip GetRamdomAudioClip()
     {
         if (grimAnimator.GetObjectFootStep() == (int)EMaterialsMode.Ground)

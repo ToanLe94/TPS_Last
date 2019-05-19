@@ -1163,7 +1163,7 @@ PrefabInstance:
     - target: {fileID: 7345840781779361347, guid: 5889ca61cbd5af04482f58447a6a6720,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7345840781788067184, guid: 5889ca61cbd5af04482f58447a6a6720,
         type: 3}
@@ -1188,7 +1188,7 @@ PrefabInstance:
     - target: {fileID: 7345840782162365505, guid: 5889ca61cbd5af04482f58447a6a6720,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7345840780060972373, guid: 5889ca61cbd5af04482f58447a6a6720,
         type: 3}
@@ -1548,7 +1548,7 @@ PrefabInstance:
     - target: {fileID: 7345840780206083208, guid: 5889ca61cbd5af04482f58447a6a6720,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7345840780207332036, guid: 5889ca61cbd5af04482f58447a6a6720,
         type: 3}
@@ -7111,21 +7111,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 598344064834494673, guid: 88bc682d797217747b12d4cb9fbf17c3,
-        type: 3}
-      propertyPath: grimAnimator
-      value: 
-      objectReference: {fileID: 1848489258}
-    - target: {fileID: 598344064834494673, guid: 88bc682d797217747b12d4cb9fbf17c3,
-        type: 3}
-      propertyPath: shooter
-      value: 
-      objectReference: {fileID: 1479830411}
-    - target: {fileID: 7725387875393428479, guid: 88bc682d797217747b12d4cb9fbf17c3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6605552664958895533, guid: 88bc682d797217747b12d4cb9fbf17c3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7681,6 +7666,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 598344064834494673, guid: 88bc682d797217747b12d4cb9fbf17c3,
+        type: 3}
+      propertyPath: grimAnimator
+      value: 
+      objectReference: {fileID: 1848489258}
+    - target: {fileID: 598344064834494673, guid: 88bc682d797217747b12d4cb9fbf17c3,
+        type: 3}
+      propertyPath: shooter
+      value: 
+      objectReference: {fileID: 1479830411}
+    - target: {fileID: 7725387875393428479, guid: 88bc682d797217747b12d4cb9fbf17c3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3282654223671350756, guid: 88bc682d797217747b12d4cb9fbf17c3,
         type: 3}
@@ -8318,6 +8318,11 @@ PrefabInstance:
     - target: {fileID: 2582873872557167040, guid: 4b497c2fcd3fe2e478ac3bfcb969f6a6,
         type: 3}
       propertyPath: m_Name
+      value: Grim
+      objectReference: {fileID: 0}
+    - target: {fileID: 2582873872557167040, guid: 4b497c2fcd3fe2e478ac3bfcb969f6a6,
+        type: 3}
+      propertyPath: m_TagString
       value: Grim
       objectReference: {fileID: 0}
     - target: {fileID: 2584565074967207919, guid: 4b497c2fcd3fe2e478ac3bfcb969f6a6,

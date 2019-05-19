@@ -151,6 +151,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f839fa07d4e52c742b205c98ca9daa61, type: 3}
   soundHeadShot: {fileID: 8300000, guid: 9277c45285fe343bd90ba1f14e090c2f, type: 3}
   audioSource: {fileID: 879148753110124330}
+  soundAttack:
+  - {fileID: 8300000, guid: d6be183c01823411ead2ad97323aa7a9, type: 3}
+  - {fileID: 8300000, guid: 9f1eb3b1453754c84b3145e800f9a71c, type: 3}
+  - {fileID: 8300000, guid: 02a712f2ddaa545cd9db60d0bd5727c4, type: 3}
+  soundStep:
+  - {fileID: 8300000, guid: 241c0b4dc9c763c45a770a1cd926356d, type: 3}
+  - {fileID: 8300000, guid: bd8fd0fa612e0bf4d91ec481dfb3fac4, type: 3}
+  soundRoar: {fileID: 8300000, guid: 6afc477f6353f3c40ac381b808f2a592, type: 3}
+  soundJumpAttack: {fileID: 8300000, guid: d0e9a1297801f6b448c3d6fcbaefa87b, type: 3}
+  soundHurt:
+  - {fileID: 8300000, guid: 1badb528fb77847ca84dd0f6f0815979, type: 3}
+  - {fileID: 8300000, guid: 8d5496d850a9a4a1f83a7381a9b08348, type: 3}
+  - {fileID: 8300000, guid: 83d9860f97f654104b04d861eda7014b, type: 3}
 --- !u!54 &2236463976587395053
 Rigidbody:
   m_ObjectHideFlags: 0
